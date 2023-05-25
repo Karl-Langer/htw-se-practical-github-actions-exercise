@@ -31,3 +31,6 @@ jobs:
       run: |
         cd example-python
         python3 -m unittest tests.test_town.TestTown
+    # step 4 - check for datei start
+    - name: Test Datei
+      run: test -f "README.md"
